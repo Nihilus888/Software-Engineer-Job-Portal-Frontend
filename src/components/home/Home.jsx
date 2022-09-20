@@ -49,16 +49,16 @@ export default function Home() {
 
   const [postedJobs, setpostedJobs] = useState([])
 
-  useEffect(() => {
-    const fetchApi = async () => {
-      const res = await fetch(`${process.env.REACT_APP_API}jobs/posted`)
-      const data = await res.json()
+  // useEffect(() => {
+  //   const fetchApi = async () => {
+  //     const res = await fetch(`${process.env.REACT_APP_API}jobs/posted`)
+  //     const data = await res.json()
   
-      setpostedJobs(data)
-    }
+  //     setpostedJobs(data)
+  //   }
   
-    fetchApi()
-  }, [])
+  //   fetchApi()
+  // }, [])
 
 
   const handleSave = (event) => {
