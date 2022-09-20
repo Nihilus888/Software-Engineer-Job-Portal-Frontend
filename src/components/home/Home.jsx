@@ -51,7 +51,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchApi = async () => {
-      const res = await fetch('http://localhost:3000/jobs/posted')
+      const res = await fetch(`${process.env.REACT_APP_API}jobs/posted`)
       const data = await res.json()
   
       setpostedJobs(data)
