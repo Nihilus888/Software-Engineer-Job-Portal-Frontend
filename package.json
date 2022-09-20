@@ -23,8 +23,8 @@
   },
   "scripts": {
     "client-install": "npm install",
-    "start": "node src/server/index.js",
-    "server": "nodemon src/server/index.js",
+    "start": "node src/index.js",
+    "server": "nodemon src/index.js",
     "client": "npm start",
     "build": "react-scripts build",
     "react": "react-scripts start"
