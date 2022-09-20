@@ -22,11 +22,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "client-install": "npm install",
-    "start": "node src/index.js",
-    "client": "npm start",
+    "start": "WATCHPACK_POLLING=true react-scripts start",
     "build": "react-scripts build",
-    "react": "react-scripts start"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
