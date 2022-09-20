@@ -26,7 +26,7 @@ function App() {
       
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path={`${process.env.REACT_APP_API}`} element={<Home />} />
         {/*{ <Route path="/jobs/:jobId" element={<JobDetails />} />
         <Route path="/jobs/:jobId/edit" element={<Auth component={EditJobDetails} />} /> }*/}
         <Route path='/profile/:id' element={<Auth component={Profile} />} />
